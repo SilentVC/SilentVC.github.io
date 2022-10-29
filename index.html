@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SSRNet</title>
+</head>
+
+
+<body>
+<h2>Demos from &quot;Sequence-to-Sequence Voice Reconstruction for Silent Speech in a Tonal Language &quot;</h2>
+<p>Abstract: Silent Speech Decoding (SSD) based on surface electromyography (sEMG) has become a prevalent task of Brain-Computer Interface (BCI) in recent years. Many works have been devoted to decoding sEMG. However, restoring silent speech in tonal languages such as Mandarin Chinese is still difficult. In this paper, we propose an optimized sequence-to-sequence (Seq2Seq) approach to synthesize voice from the sEMG-based silent speech. We extract duration information to regulate the sEMG-based silent speech using the audio length. Then, we provide a deep-learning model with an encoder-decoder structure and a state-of-art vocoder to generate the audio waveform. Experiments based on six Mandarin Chinese speakers demonstrate that the proposed model can successfully decode silent speech in Mandarin Chinese, and achieves a character error rate (CER) of 6.41% on average with human evaluation.
+
+<!--<h3>Speaker id</h3>-->
+<table width="200" border="1">
+  <tr>
+    <td>Spk id</td>
+    <td>Spk-1</td>
+    <td>Spk-2</td>
+    <td>Spk-3</td>
+    <td>Spk-4</td>
+    <td>Spk-5</td>
+    <td>Spk-6</td>
+  </tr>
+
+  <tr>
+    <td>Ground-Truth Voices</td>
+     <td><audio controls>
+    	<source src="Ground-Truth/000.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/005.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/010.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/015.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/020.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/025.wav" type="audio/wav">
+   	</audio></td>
+  </tr>
+
+  <tr>
+    <td>SSRNet results</td>
+     <td><audio controls>
+    	<source src="SSRNet/000.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/005.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/010.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/015.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/020.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/025.wav" type="audio/wav">
+   	</audio></td>
+
+  </tr>
+
+  <tr>
+    <td>Baseline results</td>
+     <td><audio controls>
+    	<source src="Baseline/000.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/005.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/010.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/015.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/020.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/025.wav" type="audio/wav">
+   	</audio></td>
+  </tr>
+    </table>
+
+    <table width="200" border="1">
+  <tr>
+    <td>Spk id</td>
+    <td>Spk-1</td>
+    <td>Spk-2</td>
+    <td>Spk-3</td>
+    <td>Spk-4</td>
+    <td>Spk-5</td>
+    <td>Spk-6</td>
+  </tr>
+
+  <tr>
+    <td>Ground-Truth Voices</td>
+     <td><audio controls>
+    	<source src="Ground-Truth/001.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/006.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/011.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/016.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/021.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Ground-Truth/026.wav" type="audio/wav">
+   	</audio></td>
+  </tr>
+
+  <tr>
+    <td>SSRNet results</td>
+     <td><audio controls>
+    	<source src="SSRNet/001.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/006.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/011.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/016.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/021.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls>
+    	<source src="SSRNet/026.wav" type="audio/wav">
+   	</audio></td>
+
+  </tr>
+
+  <tr>
+    <td>Baseline results</td>
+     <td><audio controls>
+    	<source src="Baseline/001.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/006.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/012.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/016.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/021.wav" type="audio/wav">
+   	</audio></td>
+    <td><audio controls>
+    	<source src="Baseline/026.wav" type="audio/wav">
+   	</audio></td>
+  </tr>
+
+</table>
