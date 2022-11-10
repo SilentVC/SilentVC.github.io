@@ -8,12 +8,15 @@
 
 <body>
 <h2>Demos from &quot;Sequence-to-Sequence Voice Reconstruction for Silent Speech in a Tonal Language &quot;</h2>
+
+<p>Authors: Huiyan Li, Yihao Liang, Han Gao, Li Liu, You Wang, Daqi Chen, Zhiyuan Luo, Guang Li</p>
+
 <p>Abstract: Silent Speech Interface (SSI) based on neuromuscular signals has become a popular field. Articulatory neuromuscular activity can be captured with surface electromyography (sEMG). However, it remains challenging to convert the articulatory neuromuscular signals of silent speakers into corresponding audio. This paper proposes a Mandarin-based SSI, a novel converter between articulatory neuromuscular and audio signals, to facilitate silent communication. The neuromuscular signal is the sEMG captured from both the primary speaker and the auxiliary speaker, while the audio signal is only from auxiliary speaker during vocal speech to realize speech synthesis. The proposed method is based on a hybrid framework combining convolutional neural networks and Transformer to utilize both global and local information. We experimentally validate the feasibility of the proposed method by obtaining an average objective character error rate (CER) of 10.69% from the automatic speech recognition (ASR) evaluation tool, and the subjective quality score of xx in a Multi-task Feature Transformation (MFT) with four silent speakers. The results show that our Mandarinbased SSI with vocal speaker assistance effectively facilitates the conversion from sEMG into sound in the cross-subject scenario.
 
 <!--<h3>Speaker id</h3>-->
 <table width="1000" border="1">
   <tr>
-    <td width="100">Spk id</td>
+    <td width="100">Primary spk id - Auxiliary spk id</td>
     <td>Raw</td>
     <td>Voices synthesized by PWG from ground truth features</td>
     <td>LSTM</td>
