@@ -14,14 +14,16 @@
 <p>Abstract: Silent Speech Interface (SSI) based on neuromuscular signals has become a popular field. Articulatory neuromuscular activity can be captured with surface electromyography (sEMG). However, it remains challenging to convert the articulatory neuromuscular signals of silent speakers into corresponding audio. This paper proposes a Mandarin-based SSI, a novel converter between articulatory neuromuscular and audio signals, to facilitate silent communication. The neuromuscular signal is the sEMG captured from both the primary speaker and the auxiliary speaker, while the audio signal is only from auxiliary speaker during vocal speech to realize speech synthesis. The proposed method is based on a hybrid framework combining convolutional neural networks and Transformer to utilize both global and local information. We experimentally validate the feasibility of the proposed method by obtaining an average objective character error rate (CER) of 10.69% from the automatic speech recognition (ASR) evaluation tool, and the subjective quality score of xx in a Multi-task Feature Transformation (MFT) with four silent speakers. The results show that our Mandarinbased SSI with vocal speaker assistance effectively facilitates the conversion from sEMG into sound in the cross-subject scenario.
 
 <!--<h3>Speaker id</h3>-->
-<table width="1700" border="1">
+<table border="1">
   <tr>
     <td width="100">Spk id</td>
-    <td>Raw</td>
-    <td width="200">Voices synthesized by PWG from ground truth features</td>
-    <td>LSTM</td>
-    <td>Transformer</td>
-    <td><b>Proposed (SilentVC)</b></td>
+    <td width="304">Raw</td>
+    <td width="304">Voices synthesized by PWG from ground truth features</td>
+    <td width="304">LSTM</td>
+    <td width="304">Transformer</td>
+    <td width="304"><b>Proposed (SilentVC)</b></td>
+	<td width="300">Text of audio (Mandarin)</td>
+	<td width="300">Text translated to English</td>
 
   </tr>
 
@@ -42,6 +44,12 @@
     <td><audio controls>
     	<source src="Proposed/001.wav" type="audio/wav">
    	</audio></td>
+	<td>
+		然后开始下雨 rán hòu kāi shǐ xià yǔ 
+	</td>
+	<td>
+		Then it started to rain. 
+	</td>
   </tr>
 
   <tr>
@@ -61,6 +69,12 @@
     <td><audio controls>
     	<source src="Proposed/002.wav" type="audio/wav">
    	</audio></td>
+	<td>
+		我知道我没吵醒你 wǒ zhī dào wǒ méi chǎo xǐng nǐ 
+	</td>
+	<td>
+		I know I didn't wake you up. 
+	</td>
   </tr>
 
   <tr>
@@ -80,6 +94,12 @@
     <td><audio controls>
     	<source src="Proposed/003.wav" type="audio/wav">
    	</audio></td>
+	<td>
+		今日剧情更是出现重大反转 jīn rì jù qíng gèng shì chū xiàn zhòng dà fǎn zhuǎn  
+	</td>
+	<td>
+		Today the plot is a major reversal.
+	</td>
   </tr>
 
   <tr>
@@ -99,6 +119,12 @@
     <td><audio controls>
     	<source src="Proposed/004.wav" type="audio/wav">
    	</audio></td>
+	<td>
+		七路无人售票 qī lù wú rén shòu piào   
+	</td>
+	<td>
+		Seven-way unmanned ticketing.
+	</td>
   </tr>
 
   <tr>
@@ -118,6 +144,12 @@
     <td><audio controls>
     	<source src="Proposed/005.wav" type="audio/wav">
    	</audio></td>
+	<td>
+		江西的中学有什么 jiāng xī de zhōng xué yǒu shén me    
+	</td>
+	<td>
+		What are the high schools in Jiangxi?
+	</td>
   </tr>
 
   <tr>
@@ -137,6 +169,12 @@
     <td><audio controls>
     	<source src="Proposed/006.wav" type="audio/wav">
    	</audio></td>
+	<td>
+		想要邓丽君的歌 xiǎng yào dèng lì jūn de gē     
+	</td>
+	<td>
+		Want Deng Lijun's songs
+	</td>
   </tr>
 
   <tr>
@@ -156,6 +194,12 @@
     <td><audio controls>
     	<source src="Proposed/007.wav" type="audio/wav">
    	</audio></td>
+	<td>
+		万一被他们抓住就惨了 wàn yī bèi tā men zhuā zhù jiù cǎn le     
+	</td>
+	<td>
+		If they catch you, you'll be in trouble.
+	</td>
   </tr>
 
   <tr>
@@ -175,6 +219,12 @@
     <td><audio controls>
     	<source src="Proposed/008.wav" type="audio/wav">
    	</audio></td>
+	<td>
+		中西企业有什么 zhōng xī qǐ yè yǒu shén me      
+	</td>
+	<td>
+		What are Chinese and Western companies?
+	</td>
   </tr>
 
 
