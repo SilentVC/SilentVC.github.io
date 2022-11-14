@@ -14,16 +14,16 @@
 <p>Abstract: Silent Speech Interface (SSI) based on neuromuscular signals has become a popular field for Brain-Computer Interface (BCI). Articulatory neuromuscular activity can be captured with surface electromyography (sEMG). However, it remains challenging to convert the articulatory neuromuscular signals of silent speakers into corresponding audio. This paper proposes a Mandarin-based SSI, a novel converter between articulatory neuromuscular and audio signals, to facilitate silent communication. These audio signals come from vocal auxiliary speakers to produce sound. The proposed method is based on a hybrid framework combining convolutional neural networks and Transformer to utilize both global and local information. We experimentally validate the feasibility of the proposed method by obtaining an average objective character error rate (CER) of 10.69% in a multi-task feature transformation with four silent speakers. The results show that our Mandarin-based SSI with vocal speaker assistance effectively facilitates the conversion from sEMG into sound in the cross-subject scenario. </p>
 
 <!--<h3>Speaker id</h3>-->
-<table width="2230" border="1" >
+<table width="2500" border="1" "style='TABLE-LAYOUT: fixed'" >
   <tr>
-    <td width="90">Spk id</td>
+    <td width="100">Spk id</td>
     <td width="304">Raw</td>
     <td width="304">Voices synthesized by PWG from ground truth features</td>
     <td width="304">LSTM</td>
     <td width="304">Transformer</td>
     <td width="304"><b>Proposed (SilentVC)</b></td>
-	<td width="300">Text of audio (Mandarin)</td>
-	<td width="320">Text translated to English</td>
+	<td width="360">Text of audio (Mandarin)</td>
+	<td width="340">Text translated to English</td>
 
   </tr>
 
@@ -45,8 +45,8 @@
     	<source src="Proposed/001.wav" type="audio/wav">
    	</audio></td>
 	<td>
+		<p>rán hòu kāi shǐ xià yǔ</p>
 		<p>然后开始下雨</p> 
-		<p>rán hòu kāi shǐ xià yǔ </p>
 	</td>
 	<td>
 		Then it started to rain. 
@@ -71,7 +71,8 @@
     	<source src="Proposed/002.wav" type="audio/wav">
    	</audio></td>
 	<td>
-		我知道我没吵醒你 wǒ zhī dào wǒ méi chǎo xǐng nǐ 
+		<p>wǒ zhī dào wǒ méi chǎo xǐng nǐ</p>
+		<p>我知道我没吵醒你</p>
 	</td>
 	<td>
 		I know I didn't wake you up. 
@@ -96,7 +97,8 @@
     	<source src="Proposed/003.wav" type="audio/wav">
    	</audio></td>
 	<td>
-		今日剧情更是出现重大反转 jīn rì jù qíng gèng shì chū xiàn zhòng dà fǎn zhuǎn  
+		<p>jīn rì jù qíng gèng shì chū xiàn zhòng dà fǎn zhuǎn</p>
+		<p>今日剧情更是出现重大反转</p> 
 	</td>
 	<td>
 		Today the plot is a major reversal.
@@ -121,7 +123,8 @@
     	<source src="Proposed/004.wav" type="audio/wav">
    	</audio></td>
 	<td>
-		七路无人售票 qī lù wú rén shòu piào   
+		<p>qī lù wú rén shòu piào</p> 
+		<p>七路无人售票</p> 
 	</td>
 	<td>
 		Seven-way unmanned ticketing.
@@ -146,7 +149,8 @@
     	<source src="Proposed/005.wav" type="audio/wav">
    	</audio></td>
 	<td>
-		江西的中学有什么 jiāng xī de zhōng xué yǒu shén me    
+		<p>jiāng xī de zhōng xué yǒu shén me</p>
+		<p>江西的中学有什么</p> 
 	</td>
 	<td>
 		What are the high schools in Jiangxi?
@@ -171,7 +175,8 @@
     	<source src="Proposed/006.wav" type="audio/wav">
    	</audio></td>
 	<td>
-		想要邓丽君的歌 xiǎng yào dèng lì jūn de gē     
+		<p>xiǎng yào dèng lì jūn de gē</p>
+		<p>想要邓丽君的歌</p>      
 	</td>
 	<td>
 		Want Deng Lijun's songs
@@ -196,7 +201,8 @@
     	<source src="Proposed/007.wav" type="audio/wav">
    	</audio></td>
 	<td>
-		万一被他们抓住就惨了 wàn yī bèi tā men zhuā zhù jiù cǎn le     
+		<p>wàn yī bèi tā men zhuā zhù jiù cǎn le</p>
+		<p>万一被他们抓住就惨了</p>      
 	</td>
 	<td>
 		If they catch you, you'll be in trouble.
@@ -221,7 +227,8 @@
     	<source src="Proposed/008.wav" type="audio/wav">
    	</audio></td>
 	<td>
-		中西企业有什么 zhōng xī qǐ yè yǒu shén me      
+		<p>zhōng xī qǐ yè yǒu shén me</p>
+		<p>中西企业有什么</p>       
 	</td>
 	<td>
 		What are Chinese and Western companies?
