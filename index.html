@@ -14,22 +14,128 @@
 <p>Abstract: Silent Speech Interface (SSI) based on neuromuscular signals has become a popular field for Brain-Computer Interface (BCI). Articulatory neuromuscular activity can be captured with surface electromyography (sEMG). However, it remains challenging to convert the articulatory neuromuscular signals of silent speakers into corresponding audio. This paper proposes a Mandarin-based SSI, a novel converter between articulatory neuromuscular and audio signals, to facilitate silent communication. These audio signals come from vocal auxiliary speakers to produce sound. The proposed method is based on a hybrid framework combining convolutional neural networks and Transformer to utilize both global and local information. We experimentally validate the feasibility of the proposed method by obtaining an average objective character error rate (CER) of 10.69% in a multi-task feature transformation with four silent speakers. The results show that our Mandarin-based SSI with vocal speaker assistance effectively facilitates the conversion from sEMG into sound in the cross-subject scenario. </p>
 
 <!--<h3>Speaker id</h3>-->
-<table width="2500" border="1">
-  <tr>
+<table width="1620" border="1">
+	<tr>
+		<td rowspan="2" width="100">Spk id</td>
+		<td colspan="5">Text of audio (Mandarin), Text translated to English</td>
+	</tr>
+	<tr>
+		<td>Raw</td>
+		<td>Voices synthesized by PWG from ground truth features</td>
+		<td>LSTM</td>
+		<td>Transformer</td>
+		<td><b>Proposed (SilentVC)</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2">P<sub>1f</sub> - A<sub>1f</sub></td>
+		<td colspan="5">然后开始下雨(rán hòu kāi shǐ xià yǔ) Then it started to rain.</td>
+	</tr>
+	<tr>
+		<td><audio controls>
+			<source src="Raw/001.wav" type="audio/wav">
+		   </audio></td>
+		<td><audio controls>
+			<source src="Vocoder/001.wav" type="audio/wav">
+		   </audio></td>
+		<td><audio controls>
+			<source src="Baseline/001.wav" type="audio/wav">
+		   </audio></td>
+		<td><audio controls>
+			<source src="Improve/001.wav" type="audio/wav">
+		   </audio></td>
+		<td><audio controls>
+			<source src="Proposed/001.wav" type="audio/wav">
+		   </audio></td>
+	</tr>
+	
+</table>
+
+	<!-- <tr>
+		<td rowspan="2" width="100">Spk id</td>
+		<td colspan="5">Text of audio (Mandarin), Text translated to English</td>
+	</tr>
+	<tr>
+		<td>Raw</td>
+		<td>Voices synthesized by PWG from ground truth features</td>
+		<td>LSTM</td>
+		<td>Transformer</td>
+		<td><b>Proposed (SilentVC)</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2" width="100">Spk id</td>
+		<td colspan="5">Text of audio (Mandarin), Text translated to English</td>
+	</tr>
+	<tr>
+		<td>Raw</td>
+		<td>Voices synthesized by PWG from ground truth features</td>
+		<td>LSTM</td>
+		<td>Transformer</td>
+		<td><b>Proposed (SilentVC)</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2" width="100">Spk id</td>
+		<td colspan="5">Text of audio (Mandarin), Text translated to English</td>
+	</tr>
+	<tr>
+		<td>Raw</td>
+		<td>Voices synthesized by PWG from ground truth features</td>
+		<td>LSTM</td>
+		<td>Transformer</td>
+		<td><b>Proposed (SilentVC)</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2" width="100">Spk id</td>
+		<td colspan="5">Text of audio (Mandarin), Text translated to English</td>
+	</tr>
+	<tr>
+		<td>Raw</td>
+		<td>Voices synthesized by PWG from ground truth features</td>
+		<td>LSTM</td>
+		<td>Transformer</td>
+		<td><b>Proposed (SilentVC)</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2" width="100">Spk id</td>
+		<td colspan="5">Text of audio (Mandarin), Text translated to English</td>
+	</tr>
+	<tr>
+		<td>Raw</td>
+		<td>Voices synthesized by PWG from ground truth features</td>
+		<td>LSTM</td>
+		<td>Transformer</td>
+		<td><b>Proposed (SilentVC)</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2" width="100">Spk id</td>
+		<td colspan="5">Text of audio (Mandarin), Text translated to English</td>
+	</tr>
+	<tr>
+		<td>Raw</td>
+		<td>Voices synthesized by PWG from ground truth features</td>
+		<td>LSTM</td>
+		<td>Transformer</td>
+		<td><b>Proposed (SilentVC)</td>
+	</tr>
+  <!-- <tr>
     <td width="100">Spk id</td>
-    <td width="304">Raw</td>
-    <td width="304">Voices synthesized by PWG from ground truth features</td>
-    <td width="304">LSTM</td>
-    <td width="304">Transformer</td>
-    <td width="304"><b>Proposed (SilentVC)</b></td>
+    <td>Raw</td>
+    <td>Voices synthesized by PWG from ground truth features</td>
+    <td>LSTM</td>
+    <td>Transformer</td>
+    <td><b>Proposed (SilentVC)</b></td>
 	<td width="400">Text of audio (Mandarin)</td>
 	<td width="340">Text translated to English</td>
+  </tr> -->
 
-  </tr>
-
-  <tr>
-    <td>P<sub>1f</sub> -A<sub>1f</sub></td>
-     <td><audio controls>
+  <!-- <tr>
+    <td>P<sub>1f</sub> - A<sub>1f</sub></td>
+	<td><audio controls>
     	<source src="Raw/001.wav" type="audio/wav">
    	</audio></td>
     <td><audio controls>
@@ -51,9 +157,9 @@
 	<td>
 		Then it started to rain. 
 	</td>
-  </tr>
+  </tr> -->
 
-  <tr>
+  <!-- <tr>
     <td>P<sub>1f</sub> -A<sub>1m</sub></td>
      <td><audio controls>
     	<source src="Raw/002.wav" type="audio/wav">
@@ -232,8 +338,5 @@
 	</td>
 	<td>
 		What are Chinese and Western companies?
-	</td>
-  </tr>
-
-
-</table>
+	</td> -->
+  <!-- </tr>  -->
